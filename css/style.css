@@ -15,6 +15,7 @@ body {
     background-color: #FFFFFF;
     color: #757575;
     font-family: Roboto;
+    padding-top: 70px;
 }
 
 a {
@@ -42,6 +43,10 @@ ul {
 header {
     background-color: var(--header-background-color);
     padding: 20px 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
 }
 
 .header-nav {
@@ -188,23 +193,30 @@ header {
     padding: 0px;
 }
 
+
+/* Добавлены позицыонированные элементы к фото */
+
 .position-add {
     position: relative;
     overflow: hidden;
 }
 
-.label {
+.position-add .desing-text {
+    background: rgba(47, 48, 58, 0.8);
     bottom: 3px;
-    margin: 0px;
     width: 370px;
     padding: 27px 0px;
-    line-height: 16px;
+    position: absolute;
+}
+
+.label {
+    line-height: 1.14;
     letter-spacing: 0.03em;
-    background: rgba(47, 48, 58, 0.8);
+    font-size: 14px;
+    margin: 0px;
     color: var(--title-color);
     text-transform: uppercase;
     text-align: center;
-    position: absolute;
 }
 
 .images-dev {
@@ -450,3 +462,37 @@ footer {
     margin: 0px;
     padding: 0px;
 }
+
+
+/*  Оформление модального окна */
+
+.modal {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: var(--header-background-color);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* 
+.btn-close {
+    position: absolute;
+    margin-left: 50%;
+} */

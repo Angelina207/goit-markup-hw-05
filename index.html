@@ -49,7 +49,7 @@
         <section class="section-title">
             <div class="container">
                 <h1 class="title">Эффективные решения<br> для вашего бизнеса</h1>
-                <button class="button">Заказать услугу</button>
+                <button class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -84,19 +84,25 @@
                     <li class="images-dev">
                         <div class="position-add">
                             <img src="./images/hw-03.png" alt="Веб разработка" height="294" width="370">
-                            <p class="label">Десктопные приложения</p>
+                            <div class="desing-text">
+                                <p class="label">Десктопные приложения</p>
+                            </div>
                         </div>
                     </li>
                     <li class="images-dev">
                         <div class="position-add">
                             <img src="./images/hw-01.png" alt="Мобильная разработка" height="294" width="370">
-                            <p class="label">Мобильные приложения</p>
+                            <div class="desing-text">
+                                <p class="label">Мобильные приложения</p>
+                            </div>
                         </div>
                     </li>
                     <li class="images-dev">
                         <div class="position-add">
                             <img src="./images/hw-02.png" alt="Цветовая палитра" height="294" width="370">
-                            <p class="label">Дизайнерские решения</p>
+                            <div class="desing-text">
+                                <p class="label">Дизайнерские решения</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -180,6 +186,13 @@
             <a class="footer-links" href="tel:+38096111111">+38 096 111 11 11</a>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn-close" data-modal-close>Закрыть</button>
+        </div>
+    </div>
+
     <script src="./js/modal.js"></script>
 </body>
 
