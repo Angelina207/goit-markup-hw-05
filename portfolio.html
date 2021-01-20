@@ -36,10 +36,17 @@
 
             <ul class="links-style">
                 <li>
-                    <a class="header-link" href="email:info@devstudio.com">info@devstudio.com</a>
+                    <a class="header-link" href="email:info@devstudio.com">
+                        <svg class="svg-envelope">
+                            <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                        </svg> info@devstudio.com
+                    </a>
                 </li>
                 <li>
-                    <a class="header-link" href="tel:+38096111111">+38 096 111 11 11</a>
+                    <a class="header-link" href="tel:+38096111111">
+                        <svg class="svg-smartphone">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg> +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -218,15 +225,50 @@
     <!--Подвал сайта-->
     <footer>
         <div class="container">
-            <a href="WebStudio" class="logo-footer"><span class="style-logo">Web</span>Studio</a>
+            <div class="footer-container">
+                <div>
+                    <a href="WebStudio" class="logo-footer"><span class="style-logo">Web</span>Studio</a>
 
-            <p class="text-join">ПРИСОЕДИНЯЙТЕСЬ</p>
-
-            <address>
+                    <address>
                 <a href=""><p class="address">г. Киев, пр-т Леси Украинки, 26</p></a>
-                </address>
-            <a class="footer-links" href="email:info@devstudio.com">info@devstudio.com</a><br>
-            <a class="footer-links" href="tel:+38096111111">+38 096 111 11 11</a>
+            </address>
+                    <a class="footer-links" href="email:info@devstudio.com">info@devstudio.com</a><br>
+                    <a class="footer-links" href="tel:+38096111111">+38 096 111 11 11</a>
+                </div>
+                <div class="svg-social-footer">
+                    <p class="text-join">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="footer-icon">
+                        <li class="">
+                            <a href="#" class="svg-link-footer">
+                                <svg class="svg-footer">
+                            <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                        </svg>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="svg-link-footer">
+                                <svg class="svg-footer">
+                            <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                        </svg>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="svg-link-footer">
+                                <svg class="svg-footer">
+                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="svg-link-footer">
+                                <svg class="svg-footer">
+                            <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                        </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
